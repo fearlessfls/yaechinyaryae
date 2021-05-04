@@ -1,9 +1,10 @@
-binary = input("Please Enter Your Binary ::> ")
+''' This Program Convert binary to decimal Value'''
+binary = input("Please Enter Your Binary ::> ") #Getting User Input
 
 def bi_to_deci(bi):
-    length_of_bi = len(bi)
-    deci_array = []
-    deci_value = []
+    length_of_bi = len(bi) # getting the length of binary value 
+    deci_array = [] # if binary length is 4 ,this array will become [8,4,2,1]
+    deci_value = [] # if 10 then it will become [2] .if 101 [4,1]
     for i in range(length_of_bi):
         deci_array.append(2**i)
     # print(deci_array)
